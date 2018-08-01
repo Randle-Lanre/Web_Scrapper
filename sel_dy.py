@@ -12,7 +12,7 @@ import time
 
 driver= webdriver.Firefox(executable_path=r'C:\Program Files\Mozilla Firefox\geckodriver.exe')
 driver.get("https://www.konga.com/games-consoles-5211")
-SCROLL_PAUSE_TIME = 0.5
+SCROLL_PAUSE_TIME = 1.5
 
 # Get scroll height
 last_height = driver.execute_script("return document.body.scrollHeight")
@@ -66,7 +66,7 @@ for containers in console_containers:
 
 	print('Brand: '+ prod)
 
-	print('Original Price is: '+ current +'\n' )
+	print('Original Price is: '+ current)
 	print('Store ' + strs)
 
 
